@@ -1,10 +1,13 @@
 import React from "react";
-import { Title } from "./Card.styles";
+import { CardContainer, LargeText, SmallText } from "./Card.styles";
 
-const Card = () => {
+const Card = ({ money, reason }) => {
 	return (
 		<>
-			<Title>CARD</Title>
+			<CardContainer>
+				<LargeText>{money}</LargeText>
+				<SmallText>{reason}</SmallText>
+			</CardContainer>
 		</>
 	);
 };
