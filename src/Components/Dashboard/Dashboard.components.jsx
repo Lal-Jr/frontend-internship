@@ -1,9 +1,10 @@
 import React from "react";
 import Sidebar from "../Sidebar/Sidebar.components";
-import Card from "../Card/Card.components";
+import TopCard from "../Card/TopCard/TopCard.components";
 import {
 	DashboardContainer,
 	DashboardContentWrapper,
+	DashboardContent,
 	Title,
 	CardWrapper,
 } from "./Dashboard.styles";
@@ -14,16 +15,21 @@ const Dashboard = () => {
 			<DashboardContainer>
 				<Sidebar />
 				<DashboardContentWrapper>
-					<Title>Invoices</Title>
-					<CardWrapper>
-						<Card money="$12,095" reason="Overdue" />
-						<Card money="$33,363" reason="Total Outstanding" />
-						<Card money="$4,500" reason="In draft" />
-					</CardWrapper>
-				</DashboardContentWrapper>
-				<DashboardContentWrapper>
-					<Title>Outstanding Revenue</Title>
-					<Card reason="$12,095 Overdue" />
+					<DashboardContent>
+						<Title>Invoices</Title>
+						<CardWrapper>
+							<TopCard money="$12,095" reason="Overdue" />
+							<TopCard
+								money="$33,363"
+								reason="Total Outstanding"
+							/>
+							<TopCard money="$4,500" reason="In draft" />
+						</CardWrapper>
+					</DashboardContent>
+					<DashboardContent>
+						<Title>Outstanding Revenue</Title>
+						<TopCard reason="$12,095 Overdue" />
+					</DashboardContent>
 				</DashboardContentWrapper>
 			</DashboardContainer>
 		</>

@@ -1,5 +1,5 @@
 import React from "react";
-import { CardContainer, LargeText, SmallText } from "./Card.styles";
+import { CardContainer, LargeText, SmallText } from "./TopCard.styles";
 
 const Card = ({ money, reason }) => {
 	return (

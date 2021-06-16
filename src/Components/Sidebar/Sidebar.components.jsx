@@ -1,27 +1,27 @@
 import React from "react";
-import { BsTriangleFill, BsSquareFill } from "react-icons/bs";
+import * as BsIcons from "react-icons/bs";
 import { GoPlus } from "react-icons/go";
-import { SidebarContainer, DotContainer, Dot, Icon } from "./Sidebar.styles";
+import { SideBar, DotWrapper, Dot, Icon } from "./Sidebar.styles";
 
 const Sidebar = () => {
 	return (
 		<>
-			<SidebarContainer>
-				<DotContainer>
+			<SideBar>
+				<DotWrapper>
 					<Dot style={{ color: "#dba060" }}>.</Dot>
 					<Dot style={{ color: "#b5d0c1" }}>.</Dot>
 					<Dot style={{ color: "#ffb6c1" }}>.</Dot>
-				</DotContainer>
+				</DotWrapper>
 				<Icon style={{ background: "#c0e8ff" }}>
-					<BsTriangleFill />
+					<BsIcons.BsTriangleFill />
 				</Icon>
 				<Icon style={{ background: "#d1ffd5" }}>
-					<BsSquareFill />
+					<BsIcons.BsSquareFill />
 				</Icon>
 				<Icon style={{ background: "#4c4c4c" }}>
 					<GoPlus />
 				</Icon>
-			</SidebarContainer>
+			</SideBar>
 		</>
 	);
 };

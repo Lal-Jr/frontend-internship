@@ -1,23 +1,25 @@
 import styled from "styled-components";
 
-export const SidebarContainer = styled.div`
+export const SideBar = styled.div`
 	height: 100vh;
 	width: 80px;
 	background: #000;
+	position: fixed;
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
 	align-items: center;
 `;
 
-export const DotContainer = styled.div`
+export const DotWrapper = styled.div`
 	display: flex;
 	margin-bottom: 20px;
 `;
 
 export const Dot = styled.div`
 	color: #fff;
-	margin: 10px 5px;
+	margin: 5px;
+	font-size: 30px;
 `;
 
 export const Icon = styled.h1`

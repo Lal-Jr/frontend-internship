@@ -5,14 +5,18 @@ export const DashboardContainer = styled.div`
 `;
 
 export const DashboardContentWrapper = styled.div`
+	margin: 0 0 0 60px;
+	padding: 40px;
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+`;
+
+export const DashboardContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
 	align-items: start;
-	height: 100vh;
-	width: 100vw;
-	background: #fff;
-	padding: 40px;
 `;
 
 export const Title = styled.h3`
