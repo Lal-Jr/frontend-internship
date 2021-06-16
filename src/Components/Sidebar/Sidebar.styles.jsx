@@ -1,5 +1,17 @@
 import styled from "styled-components";
 
+export const SideBarContainer = styled.div`
+	display: flex;
+`;
+
+export const SideBarMax = styled.div`
+	height: 100vh;
+	width: 300px;
+	background: #fbfbfb;
+	position: relative;
+	left: 80px;
+`;
+
 export const SideBar = styled.div`
 	height: 100vh;
 	width: 80px;
