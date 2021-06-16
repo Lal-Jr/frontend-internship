@@ -59,6 +59,9 @@ export const SideBarContentWrapper = styled.div`
 
 export const SideBarContent = styled.div``;
 
-export const ListItem = styled.li`
+export const List = styled.li`
 	list-style-type: none;
+	text-decoration: none;
 `;
+
+export const ListItem = styled.p``;

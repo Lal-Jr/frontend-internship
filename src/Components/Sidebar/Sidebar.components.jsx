@@ -8,6 +8,7 @@ import {
 	DotWrapper,
 	Dot,
 	Icon,
+	List,
 	ListItem,
 	SideBarContentWrapper,
 	SideBarContent,
@@ -40,12 +41,12 @@ const Sidebar = () => {
 						<SideBarContent>
 							{SidebarData.map((item, index) => {
 								return (
-									<ListItem key={index}>
-										<a href="#" to={item.path}>
+									<List key={index}>
+										<ListItem to={item.path}>
 											{item.icon}
 											<span>{item.title}</span>
-										</a>
-									</ListItem>
+										</ListItem>
+									</List>
 								);
 							})}
 						</SideBarContent>

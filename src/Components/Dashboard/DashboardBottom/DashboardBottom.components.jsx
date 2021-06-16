@@ -40,7 +40,7 @@ const DashboardBottom = () => {
 							invoiceAmount="$3,500"
 						/>
 						<InvoiceCard
-							invoiceNumber="00105"
+							invoiceNumber="#00105"
 							invoiceItem="Cleancloud"
 							invoiceDate="1 Sep,2020"
 							invoiceStatus="Sent"
