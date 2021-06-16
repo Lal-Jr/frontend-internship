@@ -3,7 +3,7 @@ import { BsCircleFill } from "react-icons/bs";
 
 export const CardContainer = styled.div`
 	height: 250px;
-	width: 350px;
+	width: 500px;
 	border-radius: 20px;
 	background: #faf8f3;
 	padding: 25px;

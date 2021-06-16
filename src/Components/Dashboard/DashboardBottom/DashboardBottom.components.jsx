@@ -21,8 +21,8 @@ const DashboardBottom = () => {
 				<Content>
 					<HeadingWrapper>
 						<TitleWrapper>
-							<Title></Title>
-							<SmallText></SmallText>
+							<Title>Invoices</Title>
+							<SmallText>recently created</SmallText>
 						</TitleWrapper>
 						<IconWrapper>
 							<Settings />

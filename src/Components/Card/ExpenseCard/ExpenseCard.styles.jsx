@@ -4,8 +4,8 @@ import { BsPaperclip } from "react-icons/bs";
 export const CardContainer = styled.div`
 	background: #f0f4ff;
 	height: 250px;
-	width: 200px;
-	border-radius: 20px;
+	width: 250px;
+	border-radius: 20px 20px 0 0;
 	margin-right: 25px;
 	padding: 25px;
 	display: flex;

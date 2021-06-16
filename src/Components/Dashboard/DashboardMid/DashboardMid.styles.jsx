@@ -14,7 +14,7 @@ export const Content = styled.div`
 
 export const TitleWrapper = styled.div`
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	margin-top: 75px;
 `;
 
@@ -26,12 +26,12 @@ export const Title = styled.div`
 export const Date = styled.div`
 	color: #d7d7d7;
 	font-size: 14px;
-	padding-inline: 5px;
+	padding: 0 10px 2px;
 `;
 
 export const Settings = styled(VscSettings)`
 	transform: rotate(90deg);
-	margin-left: 50px;
+	margin: 0 0 2px 45px;
 	font-size: 20px;
 	font-weight: 900;
 	color: #d7d7d7;

@@ -29,7 +29,7 @@ const DashboardTop = () => {
 				</Content>
 				<Divider />
 				<Content>
-					<Title>.</Title>
+					<Title style={{ color: "transparent" }}>`</Title>
 					<CardWrapper>
 						<TopCard money="$21.3k" />
 					</CardWrapper>

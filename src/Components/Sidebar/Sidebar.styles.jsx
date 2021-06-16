@@ -6,7 +6,7 @@ export const SideBarContainer = styled.div`
 
 export const SideBarMax = styled.div`
 	height: 100vh;
-	width: 300px;
+	width: 500px;
 	background: #fbfbfb;
 	position: relative;
 	left: 80px;

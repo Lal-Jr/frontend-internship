@@ -5,7 +5,7 @@ export const DashboardContainer = styled.div`
 `;
 
 export const DashboardContentWrapper = styled.div`
-	padding: 70px 120px;
+	padding: 70px;
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
