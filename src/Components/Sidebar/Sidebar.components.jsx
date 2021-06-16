@@ -8,7 +8,11 @@ import {
 	DotWrapper,
 	Dot,
 	Icon,
+	ListItem,
+	SideBarContentWrapper,
+	SideBarContent,
 } from "./Sidebar.styles";
+import { SidebarData } from "./SidebarData";
 
 const Sidebar = () => {
 	return (
@@ -30,7 +34,23 @@ const Sidebar = () => {
 						<GoPlus />
 					</Icon>
 				</SideBar>
-				<SideBarMax></SideBarMax>
+				<SideBarMax>
+					<SideBarContentWrapper>
+						<SideBarContent>Hello</SideBarContent>
+						<SideBarContent>
+							{SidebarData.map((item, index) => {
+								return (
+									<ListItem key={index}>
+										<a href="#" to={item.path}>
+											{item.icon}
+											<span>{item.title}</span>
+										</a>
+									</ListItem>
+								);
+							})}
+						</SideBarContent>
+					</SideBarContentWrapper>
+				</SideBarMax>
 			</SideBarContainer>
 		</>
 	);

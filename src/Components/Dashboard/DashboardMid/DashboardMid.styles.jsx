@@ -44,5 +44,5 @@ export const CardWrapper = styled.div`
 
 export const Arrow = styled(FiArrowUpRight)`
 	font-size: 28px;
-	margin-left: 500px;
+	margin-left: 650px;
 `;
