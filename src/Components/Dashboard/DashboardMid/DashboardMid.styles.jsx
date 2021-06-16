@@ -31,7 +31,7 @@ export const Date = styled.div`
 
 export const Settings = styled(VscSettings)`
 	transform: rotate(90deg);
-	margin: 0 0 2px 45px;
+	margin: 0 0 2px 190px;
 	font-size: 20px;
 	font-weight: 900;
 	color: #d7d7d7;

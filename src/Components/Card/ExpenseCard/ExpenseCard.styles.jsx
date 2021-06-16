@@ -36,7 +36,7 @@ export const Clip = styled(BsPaperclip)`
 export const IconWrapper = styled.div``;
 
 export const Icon = styled.div`
-	font-size: 36px;
+	font-size: 48px;
 `;
 
 export const IconText = styled.div``;

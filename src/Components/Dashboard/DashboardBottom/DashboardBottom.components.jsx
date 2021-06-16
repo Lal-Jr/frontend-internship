@@ -1,5 +1,6 @@
 import React from "react";
 import InvoiceCard from "../../Card/InvoiceCard/InvoiceCard.components";
+import { BsCloudUpload } from "react-icons/bs";
 import BlackCard from "../../Card/BlackCard/BlackCard.components";
 import {
 	ContentWrapper,
@@ -30,9 +31,21 @@ const DashboardBottom = () => {
 						</IconWrapper>
 					</HeadingWrapper>
 					<CardWrapper>
-						<InvoiceCard />
-						<InvoiceCard />
-						<InvoiceCard />
+						<InvoiceCard index="true" picture={<BsCloudUpload />} />
+						<InvoiceCard
+							invoiceNumber="#00106"
+							invoiceItem="Mindtickle"
+							invoiceDate="2 Sep,2020"
+							invoiceStatus="Viewed"
+							invoiceAmount="$3,500"
+						/>
+						<InvoiceCard
+							invoiceNumber="00105"
+							invoiceItem="Cleancloud"
+							invoiceDate="1 Sep,2020"
+							invoiceStatus="Sent"
+							invoiceAmount="$2,000"
+						/>
 					</CardWrapper>
 				</Content>
 				<Content>

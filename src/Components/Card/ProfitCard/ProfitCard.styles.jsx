@@ -42,9 +42,9 @@ export const Line = styled.div`
 	height: 200px;
 	width: 2px;
 	background: black;
-	margin-left: 75px;
+	margin-left: 175px;
 `;
 
 export const Text = styled.div`
-	margin: 185px 0 0 30px;
+	margin: 185px 0 0 90px;
 `;

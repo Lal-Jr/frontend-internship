@@ -8,25 +8,47 @@ import {
 	Content,
 	Line,
 	TextWrapper,
+	Icon,
 } from "./InvoiceCard.styles";
 
-const ExpenseCard = () => {
+const ExpenseCard = ({
+	invoiceNumber,
+	invoiceItem,
+	invoiceDate,
+	invoiceStatus,
+	invoiceAmount,
+	index,
+	picture,
+}) => {
 	return (
 		<>
 			<CardContainer>
-				<ContentWrapper>
+				<Content
+					style={{
+						display: index ? "flex" : "none",
+						flexDirection: "column",
+						justifyContent: "center",
+						alignItems: "center",
+					}}
+				>
+					<Icon>{picture}</Icon>
+					<LargeText>Send Invoice</LargeText>
+				</Content>
+				<ContentWrapper style={{ display: index ? "none" : "flex" }}>
 					<SmallLine />
 					<Content>
-						<SmallText></SmallText>
-						<LargeText></LargeText>
-						<SmallText></SmallText>
+						<SmallText>{invoiceNumber}</SmallText>
+						<LargeText>{invoiceItem}</LargeText>
+						<SmallText>{invoiceDate}</SmallText>
 					</Content>
 				</ContentWrapper>
-				<Line />
-				<ContentWrapper>
+				<Line style={{ display: index ? "none" : "flex" }} />
+				<ContentWrapper style={{ display: index ? "none" : "flex" }}>
 					<TextWrapper>
-						<LargeText></LargeText>
-						<SmallText></SmallText>
+						<LargeText>{invoiceStatus}</LargeText>
+						<SmallText style={{ color: "#000" }}>
+							{invoiceAmount}
+						</SmallText>
 					</TextWrapper>
 				</ContentWrapper>
 			</CardContainer>
