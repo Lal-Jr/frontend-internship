@@ -1,10 +1,31 @@
 import React from "react";
+import {
+	TextWrapper,
+	LargeText,
+	SmallTextWrapper,
+	Dot,
+	SmallText,
+	Line,
+	Date,
+} from "./ProfitCard.styles";
 
 function ProfitCard() {
 	return (
-		<div>
-			<h1>hello</h1>
-		</div>
+		<>
+			<TextWrapper>
+				<LargeText></LargeText>
+				<SmallTextWrapper>
+					<Dot />
+					<SmallText></SmallText>
+				</SmallTextWrapper>
+				<SmallTextWrapper>
+					<Dot />
+					<SmallText></SmallText>
+				</SmallTextWrapper>
+			</TextWrapper>
+			<Line />
+			<Date></Date>
+		</>
 	);
 }
 
