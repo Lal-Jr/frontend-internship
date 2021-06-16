@@ -1,11 +1,20 @@
 import React from "react";
-import { CardContainer, LargeText, SmallText } from "./TopCard.styles";
+import {
+	CardContainer,
+	LargeText,
+	Bar,
+	BarFill,
+	SmallText,
+} from "./TopCard.styles";
 
-const Card = ({ money, reason }) => {
+const Card = ({ money, reason, index }) => {
 	return (
 		<>
 			<CardContainer>
 				<LargeText>{money}</LargeText>
+				<Bar style={{ visibility: index ? "visible" : "hidden" }}>
+					<BarFill />
+				</Bar>
 				<SmallText>{reason}</SmallText>
 			</CardContainer>
 		</>

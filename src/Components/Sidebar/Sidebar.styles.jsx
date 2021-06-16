@@ -24,7 +24,7 @@ export const Dot = styled.div`
 
 export const Icon = styled.h1`
 	color: #000;
-	margin: 10px;
+	margin: 7.5px;
 	padding: 20px;
 	cursor: pointer;
 	background: #fff;

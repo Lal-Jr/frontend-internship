@@ -7,6 +7,8 @@ import {
 	DashboardContent,
 	Title,
 	CardWrapper,
+	Divider,
+	Search,
 } from "./Dashboard.styles";
 
 const Dashboard = () => {
@@ -28,8 +30,18 @@ const Dashboard = () => {
 					</DashboardContent>
 					<DashboardContent>
 						<Title>Outstanding Revenue</Title>
-						<TopCard reason="$12,095 Overdue" />
+						<CardWrapper>
+							<TopCard reason="$12,095 Overdue" index="true" />
+						</CardWrapper>
 					</DashboardContent>
+					<Divider />
+					<DashboardContent>
+						<Title>.</Title>
+						<CardWrapper>
+							<TopCard money="$21.3k" />
+						</CardWrapper>
+					</DashboardContent>
+					<Search />
 				</DashboardContentWrapper>
 			</DashboardContainer>
 		</>
