@@ -1,3 +1,3 @@
-# Internship Task for Insolvers
+This Repo consists of the project provided by Harsh Goel which was to replicate a Dribble project of a certain dashboard as similar as possible.
 
-> Create a PR to master branch.
+Website Deployed on https://lucid-ramanujan-cc1296.netlify.app/
