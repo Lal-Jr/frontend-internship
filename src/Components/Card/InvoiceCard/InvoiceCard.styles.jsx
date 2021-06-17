@@ -9,7 +9,6 @@ export const CardContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	padding: 25px;
 `;
 
 export const ContentWrapper = styled.div`
@@ -52,7 +51,18 @@ export const TextWrapper = styled.div`
 export const Icon = styled.div`
 	display: grid;
 	place-items: center;
-	margin-bottom: 10px;
+	margin: 40px 0 10px;
 	font-size: 48px;
 	width: 100%;
+`;
+
+export const Box = styled.div`
+	display: flex;
+	flex-direction: column;
+	justif-content: center;
+	align-items: center;
+	height: 200px;
+	width: 245px;
+	border-radius: 20px;
+	border: 1px dashed #000;
 `;

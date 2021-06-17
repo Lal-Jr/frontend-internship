@@ -12,6 +12,16 @@ import {
 	ListItem,
 	SideBarContentWrapper,
 	SideBarContent,
+	InfoWrapper,
+	Picture,
+	Quote,
+	Name,
+	Circle,
+	Span,
+	SettingsWrapper,
+	Settings,
+	Text,
+	ArrowLeft,
 } from "./Sidebar.styles";
 import { SidebarData } from "./SidebarData";
 
@@ -37,18 +47,33 @@ const Sidebar = () => {
 				</SideBar>
 				<SideBarMax>
 					<SideBarContentWrapper>
-						<SideBarContent>Hello</SideBarContent>
+						<SideBarContent>
+							<InfoWrapper>
+								<Circle>
+									<Picture />
+								</Circle>
+								<Quote>Welcome back,</Quote>
+								<Name>Julie Bell</Name>
+							</InfoWrapper>
+						</SideBarContent>
 						<SideBarContent>
 							{SidebarData.map((item, index) => {
 								return (
 									<List key={index}>
 										<ListItem to={item.path}>
 											{item.icon}
-											<span>{item.title}</span>
+											<Span>{item.title}</Span>
 										</ListItem>
 									</List>
 								);
 							})}
+						</SideBarContent>
+						<SideBarContent>
+							<SettingsWrapper>
+								<Settings />
+								<Text>Settings</Text>
+								<ArrowLeft />
+							</SettingsWrapper>
 						</SideBarContent>
 					</SideBarContentWrapper>
 				</SideBarMax>

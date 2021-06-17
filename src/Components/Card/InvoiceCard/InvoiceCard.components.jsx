@@ -1,4 +1,5 @@
 import React from "react";
+import { BsCloudUpload } from "react-icons/bs";
 import {
 	CardContainer,
 	ContentWrapper,
@@ -9,6 +10,7 @@ import {
 	Line,
 	TextWrapper,
 	Icon,
+	Box,
 } from "./InvoiceCard.styles";
 
 const ExpenseCard = ({
@@ -18,22 +20,24 @@ const ExpenseCard = ({
 	invoiceStatus,
 	invoiceAmount,
 	index,
-	picture,
 }) => {
 	return (
 		<>
-			<CardContainer>
-				<Content
+			<CardContainer
+				style={{
+					padding: index ? "15px" : "25px",
+				}}
+			>
+				<Box
 					style={{
 						display: index ? "flex" : "none",
-						flexDirection: "column",
-						justifyContent: "center",
-						alignItems: "center",
 					}}
 				>
-					<Icon>{picture}</Icon>
-					<LargeText>Send Invoice</LargeText>
-				</Content>
+					<Icon>
+						<BsCloudUpload />
+					</Icon>
+					<LargeText>Upload Invoice</LargeText>
+				</Box>
 				<ContentWrapper style={{ display: index ? "none" : "flex" }}>
 					<SmallLine />
 					<Content>

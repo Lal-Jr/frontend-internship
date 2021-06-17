@@ -1,6 +1,5 @@
 import React from "react";
 import InvoiceCard from "../../Card/InvoiceCard/InvoiceCard.components";
-import { BsCloudUpload } from "react-icons/bs";
 import BlackCard from "../../Card/BlackCard/BlackCard.components";
 import {
 	ContentWrapper,
@@ -31,7 +30,7 @@ const DashboardBottom = () => {
 						</IconWrapper>
 					</HeadingWrapper>
 					<CardWrapper>
-						<InvoiceCard index="true" picture={<BsCloudUpload />} />
+						<InvoiceCard index="true" />
 						<InvoiceCard
 							invoiceNumber="#00106"
 							invoiceItem="Mindtickle"
