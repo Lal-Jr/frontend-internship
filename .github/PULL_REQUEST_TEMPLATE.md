@@ -2,8 +2,7 @@ Your full name : Harish Lal
 
 Your Linkedin Profile URL: https://www.linkedin.com/in/laljr-harish/
 
-Screenshots:
-Put screenshots of what you designed here
+Screenshots:![Screenshot](/Image.png)
 
 Problems faced during making the assignment
 
